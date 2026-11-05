@@ -1,66 +1,49 @@
-# ☕ Coffee Shop Terminal Application
+# 📊 Interactive Dash Bootstrap Dashboard
 
-A clean, object-oriented command-line coffee ordering system built in Python. This application allows users to browse a dynamic coffee menu, manage order quantities, calculate totals, securely handle checkouts, and automatically archive transaction receipts locally.
+A clean, responsive web dashboard built with **Python**, **Plotly Dash**, and **Dash Bootstrap Components (LUX theme)**. It features dynamic filtering via dropdown menus and fully interactive data visualization.
+
+---
+
+## 📸 Preview
+![Dashboard Screenshot](screenshot.png)[cite: 1]
 
 ---
 
 ## 🚀 Features
-
-* **Object-Oriented Design:** Clean separation of concerns across `Coffee`, `Menu`, `Order`, and `CoffeeShopApp` classes.
-* **Smart Cart Management:** Add multiple quantities of items, update existing selections automatically, and view detailed order breakdowns.
-* **Transaction Archiving:** Automatically logs completed orders and timestamps into a local `receipts.json` file.
-* **Robust Input Validation:** Bulletproof error handling to ensure smooth user navigation and prevent crashes on invalid inputs.
+* **Responsive Layout:** Built with Dash Bootstrap grid system (`dbc.Container`, `dbc.Row`, `dbc.Col`).
+* **Dynamic Interactivity:** Filter sales metrics instantly by year using a reactive `dcc.Dropdown` callback.
+* **Modern Styling:** Styled using the clean `LUX` theme from Dash Bootstrap Components.
 
 ---
 
-## 🛠️ Prerequisites
+## 🛠️ Installation & Setup
 
-* Python 3.8 or higher installed on your machine.
-
----
-
-## 📥 Installation & Setup
+Follow these steps to run the dashboard locally on your machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/temesgen-teka4/CoffeeShopApp.git](https://github.com/temesgen-teka4/CoffeeShopApp.git)
-   cd CoffeeShopApp
+   git clone [https://github.com/temesgen-teka4/Dashbord_usingPython.git](https://github.com/temesgen-teka4/Dashbord_usingPython.git)
+   cd Dashbord_usingPython
+
+   1,Create and activate a virtual environment (Optional but recommended):
+   python -m venv venv
+     # On Windows:
+    venv\Scripts\activate
 
 
- ## Usage Guide
-   when u run the Application You will see
- ================================
-          COFFEE MENU          
-================================
-[1] Espresso     | $30.00
-[2] Latte        | $35.00
-[3] Cappuccino   | $40.00
-[4] Mocha        | $45.00
-================================
-5. View Order
-6. Checkout
-7. Exit
+    2, Install dependencies:
+    pip install -r requirements.txt
 
-Select an item (1-4): Enter the menu number and specify the desired quantity.
 
-View Order (5): Display all items currently in your cart along with the running total.
+    3,Run the application:
+    python Dashbord.py
 
-Checkout (6): Review your order summary, confirm purchase, and generate an archived transaction record.
-
-Exit (7): Quit the application.
+    4,Open in browser:
+Navigate to http://127.0.0.1:8050/ in your web browser
 
 
 
-## Project Structure
-
-CoffeeShopApp/
-│
-├── CoffeeMenu.py     # Main application runtime and classes
-├── receipts.json     # Automatically generated transaction logs
-└── README.md         # Project documentation
-
-
-👨‍💻 Author
-Temesgen Teka
-
-GitHub: @temesgen-teka4
+  Code Structure
+  Dashbord.py — Main application logic, layout configuration, and callback functions.   
+  requirements.txt — Project Python package dependencies.  
+  screenshot.png — Visual preview asset for the repository[cite: 1].
